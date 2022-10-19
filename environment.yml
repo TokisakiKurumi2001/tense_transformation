@@ -23,6 +23,7 @@ dependencies:
   - xz=5.2.5=h7f8727e_1
   - zlib=1.2.12=h7f8727e_2
   - pip:
+    - absl-py==1.3.0
     - aiohttp==3.8.1
     - aiosignal==1.2.0
     - anyio==3.6.1
@@ -32,6 +33,7 @@ dependencies:
     - backports-csv==1.0.7
     - beautifulsoup4==4.11.1
     - blis==0.9.1
+    - cachetools==5.2.0
     - catalogue==2.0.8
     - cffi==1.15.1
     - charset-normalizer==2.1.0
@@ -52,10 +54,14 @@ dependencies:
     - frozenlist==1.3.1
     - fsspec==2022.7.1
     - future==0.18.2
+    - google-auth==2.13.0
+    - google-auth-oauthlib==0.4.6
+    - grpcio==1.50.0
     - h11==0.13.0
     - httptools==0.4.0
     - huggingface-hub==0.8.1
     - idna==3.3
+    - importlib-metadata==5.0.0
     - importlib-resources==5.10.0
     - inflect==6.0.0
     - jaraco-classes==3.2.3
@@ -67,6 +73,7 @@ dependencies:
     - joblib==1.1.0
     - langcodes==3.3.0
     - lxml==4.9.1
+    - markdown==3.4.1
     - markupsafe==2.1.1
     - more-itertools==8.14.0
     - multidict==6.0.2
@@ -75,6 +82,7 @@ dependencies:
     - mysqlclient==2.1.1
     - nltk==3.7
     - numpy==1.23.2
+    - oauthlib==3.2.2
     - packaging==21.3
     - pandas==1.4.3
     - pathy==0.6.2
@@ -83,19 +91,26 @@ dependencies:
     - portalocker==2.5.1
     - portend==3.1.0
     - preshed==3.0.7
+    - protobuf==3.19.6
     - pyarrow==9.0.0
+    - pyasn1==0.4.8
+    - pyasn1-modules==0.2.8
     - pycparser==2.21
     - pydantic==1.9.2
+    - pydeprecate==0.3.2
     - pyjnius==1.4.2
     - pyparsing==3.0.9
     - python-dateutil==2.8.2
     - python-docx==0.8.11
     - python-dotenv==0.20.0
+    - pytorch-lightning==1.7.7
     - pytz==2022.2.1
     - pyyaml==6.0
     - regex==2022.7.25
     - requests==2.28.1
+    - requests-oauthlib==1.3.1
     - responses==0.18.0
+    - rsa==4.9
     - sacrebleu==2.2.0
     - scikit-learn==1.1.2
     - scipy==1.9.0
@@ -112,10 +127,14 @@ dependencies:
     - starlette==0.19.1
     - tabulate==0.8.10
     - tempora==5.0.2
+    - tensorboard==2.10.1
+    - tensorboard-data-server==0.6.1
+    - tensorboard-plugin-wit==1.8.1
     - thinc==8.1.1
     - threadpoolctl==3.1.0
     - tokenizers==0.12.1
     - torch==1.12.1+cu113
+    - torchmetrics==0.10.0
     - tqdm==4.64.0
     - transformers==4.22.0.dev0
     - typer==0.4.2
@@ -127,6 +146,7 @@ dependencies:
     - wasabi==0.10.1
     - watchfiles==0.16.1
     - websockets==10.3
+    - werkzeug==2.2.2
     - xxhash==3.0.0
     - yarl==1.8.1
     - zc-lockfile==2.0
