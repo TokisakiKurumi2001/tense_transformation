@@ -169,16 +169,16 @@ class GeneralTenseTransformation:
 
 if __name__ == "__main__":
     general_tense_transformation = GeneralTenseTransformation()
-    sent = "My greatest weakness was here"
-    tense = "Past Simple"
-    out_tense = "Present Simple"
+    sent = "I show my presentation"
+    tense = "Present Simple"
+    out_tense = "Present Perfect"
     print(general_tense_transformation(sent, tense, out_tense))
-    # out_tenses = {'Future Continuous': 0,
-    #         'Past Continuous': 1,
-    #         'Past Simple': 2,
-    #         'Present Continuous': 3,
-    #         'Present Perfect': 4,
-    #         'Present Perfect Continuous': 5,
-    #         'Present Simple': 6}
-    # for out_tense in out_tenses.keys():
-    #     print(general_tense_transformation(sent, tense, out_tense))
+    out_tenses = {'Future Continuous': 0,
+            'Past Continuous': 1,
+            'Past Simple': 2,
+            'Present Continuous': 3,
+            'Present Perfect': 4,
+            'Present Perfect Continuous': 5,
+            'Present Simple': 6}
+    for out_tense in out_tenses.keys():
+        print(general_tense_transformation(sent, tense, out_tense))

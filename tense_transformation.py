@@ -142,7 +142,7 @@ def tense_transformation(nlp, sent: str, tense: str, out_tense: str):
           doc[verbs_indexes[0]:verbs_indexes[1]], verb
       )
     elif "Present Perfect" in out_tense:
-      verb = f'have been {verb}'
+      verb = f'have/has been {verb}'
       arr[verbs_indexes[0]:verbs_indexes[1]] = [verb]
       new_sent = " ".join(arr)
       # print(new_sent)
@@ -169,8 +169,11 @@ def tense_transformation(nlp, sent: str, tense: str, out_tense: str):
           doc[verbs_indexes[0]:verbs_indexes[1]], verb
       )
   elif out_tense == "Present Perfect":
-    verb = conjugate(verb, tense="past", aspect="progressive")
-    verb = f'have {verb}'
+    try:
+      verb = conjugate(verb, tense="past", aspect="progressive")
+    except:
+      verb = conjugate(verb, tense="past", aspect="progressive")
+    verb = f'have/has {verb}'
     arr[verbs_indexes[0]:verbs_indexes[1]] = [verb]
     new_sent = " ".join(arr)
     # print(new_sent)
