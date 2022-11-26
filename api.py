@@ -17,7 +17,10 @@ class RecommendTense:
 
     def __call__(self, standard_answer: str, sent: str) -> str:
         tense = self.model(sent)
-        __standard_tense = self.standard_tense(standard_answer)
+        try:
+            __standard_tense = self.standard_tense(standard_answer)
+        except:
+            __standard_tense = self.model(standard_answer)
         if tense == __standard_tense:
             return f'Your tense is matched'
         else:
